@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aprakriti.shoesstore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_action_back"
+        android:label="Shoes Store"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AdminUser"
+            android:parentActivityName=".AdminUser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginPage"
+            android:label="Login Page"
+            android:parentActivityName=".LoginPage" />
+        <activity
+            android:name=".AdminLogin"
+            android:label="Admin Page"
+            android:parentActivityName=".AdminLogin" />
+        <activity
+            android:name=".SignUpPage"
+            android:label="Sign Up"
+            android:parentActivityName=".SignUpPage" />
+        <activity
+            android:name=".UserDetails"
+            android:label="User Details" />
+        <activity
+            android:name=".Login_nd_signup_User"
+            android:label="Login and SignUp"
+            android:parentActivityName=".Login_nd_signup_User" />
+        <activity
+            android:name=".OrderDescription"
+            android:parentActivityName=".OrderDescription" />
+        <activity
+            android:name=".Order"
+            android:label="Order Form"
+            android:parentActivityName=".Order" />
+        <activity
+            android:name=".AdminUserDetails"
+            android:label="@string/title_activity_admin_user_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyOrder"
+            android:label="My Order"
+            android:parentActivityName=".MyOrder"></activity>
+    </application>
+
+</manifest>
