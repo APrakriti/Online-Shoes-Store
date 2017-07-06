@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +14,7 @@
         android:background="@color/primary_light"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        tools:context="com.aprakriti.shoesstore.LoginPage">
+        tools:context="com.prakriti.myapplication.LoginPage">
         <ImageView
             android:src="@drawable/logowelcome"
             android:layout_width="match_parent"
@@ -35,10 +35,12 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:hint="Email"
+                android:maxLines="1"
                 android:layout_gravity="center_horizontal"
                 android:textColor="@color/secondary_text"
                 android:textColorHint="#000000"
                 android:id="@+id/loginemail"
+                android:imeActionLabel="Test"
                 android:textSize="20dp"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -48,6 +50,7 @@
             android:layout_width="match_parent"
             android:id="@+id/inputlayout_login_password"
             android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
             android:layout_marginBottom="8dp">
             <EditText
                 android:layout_width="match_parent"

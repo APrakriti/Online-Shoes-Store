@@ -14,9 +14,16 @@
     android:paddingLeft="24dp"
     android:paddingRight="24dp"
     android:background="@color/primary_light"
-    tools:context="com.aprakriti.shoesstore.SignUpPage">
-    <ImageView android:src="@drawable/logowelcome"
-        android:layout_width="wrap_content"
+    tools:context="com.prakriti.myapplication.SignUpPage">
+    <TextView
+        android:text="TREAT SHOES STORE"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:paddingLeft="24dp"
+        android:layout_width="match_parent"
+        android:background="@color/primary_light"
+        android:textColor="@color/primary_dark"
+        android:textColorHint="@color/secondary_text"
         android:layout_height="72dp"
         android:layout_marginBottom="24dp"
         android:layout_gravity="center_horizontal" />
@@ -30,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/secondary_text"
+            android:inputType="text"
             android:hint="Name"
             android:id="@+id/signupname"
             android:textSize="20dp"/>
@@ -47,6 +55,7 @@
           android:layout_height="wrap_content"
           android:textColor="@color/secondary_text"
           android:hint="Username"
+          android:inputType="text"
           android:id="@+id/signupUsername"
           android:textSize="20dp"/>
 
@@ -63,7 +72,23 @@
             android:layout_height="wrap_content"
             android:textColor="@color/secondary_text"
             android:hint="Password"
+           android:inputType="textPassword"
             android:id="@+id/singupPassword"
+            android:textSize="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/inputlayout_confirmpassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:id="@+id/singupconfirmPassword"
             android:textSize="20dp"/>
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
@@ -77,6 +102,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/secondary_text"
             android:hint="Contact"
+            android:inputType="number"
             android:id="@+id/signupContact"
             android:textSize="20dp"/>
     </android.support.design.widget.TextInputLayout>
@@ -91,6 +117,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/secondary_text"
             android:hint="Email"
+            android:inputType="textEmailAddress"
             android:id="@+id/signupemail"
             android:textSize="20dp"/>
     </android.support.design.widget.TextInputLayout>

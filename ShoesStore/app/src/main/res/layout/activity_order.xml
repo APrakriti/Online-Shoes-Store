@@ -14,7 +14,7 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
         android:background="@color/primary_light"
-        tools:context="com.aprakriti.shoesstore.SignUpPage">
+        tools:context="com.prakriti.myapplication.SignUpPage">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,10 +33,12 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/secondary_text"
                 android:hint="Name"
+                android:inputType="text"
                 android:id="@+id/ordername"
                 android:textSize="20dp"/>
 
         </android.support.design.widget.TextInputLayout>
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_height="wrap_content"
@@ -49,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/secondary_text"
                 android:hint="Email"
+                android:inputType="textEmailAddress"
                 android:id="@+id/orderemail"
                 android:textSize="20dp"/>
 
@@ -144,6 +147,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/secondary_text"
                 android:hint="Quantity"
+                android:inputType="number"
                 android:id="@+id/orderquantiy"
                 android:textSize="20dp"/>
 
@@ -177,6 +181,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/secondary_text"
                 android:hint="Delivery Address"
+                android:inputType="text"
                 android:id="@+id/orderDeliveryaddress"
                 android:textSize="20dp"/>
         </android.support.design.widget.TextInputLayout>

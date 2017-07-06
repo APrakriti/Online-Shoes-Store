@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.aprakriti.shoesstore.AdminUserDetails"
+    tools:context="com.prakriti.myapplication.AdminUserDetails"
     tools:showIn="@layout/app_bar_admin_user_details">
     <include
         layout="@layout/tab_layout"></include>
